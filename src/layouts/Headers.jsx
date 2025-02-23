@@ -1,7 +1,7 @@
 import React from "react";
-import logo from "../../images/nuevoLogo.png";
-import corazon from "../../images/corazon.png";
-import perfil from "../../images/perfil.png";
+import logo from "../assets/images/nuevoLogo.png";
+import corazon from "../assets/images/corazon.png";
+import perfil from "../assets/images/perfil.png";
 
 const Header = () => {
   return (
@@ -25,27 +25,27 @@ const Header = () => {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <a class="navbar-brand" href="#">
+                <a className="navbar-brand" href="#">
                   <img
                     src={corazon}
                     alt="Logo"
                     width="20"
                     height="15"
-                    class="d-inline-block align-text-center"
+                    className="d-inline-block align-text-center"
                   />
-                   Favoritos
+                  Favoritos
                 </a>
               </li>
               <li className="nav-item">
-              <a class="navbar-brand" href="#">
+                <a className="navbar-brand" href="#">
                   <img
                     src={perfil}
                     alt="Logo"
                     width="20"
                     height="15"
-                    class="d-inline-block align-text-center"
+                    className="d-inline-block align-text-center"
                   />
-                   Cuenta
+                  Cuenta
                 </a>
               </li>
             </ul>

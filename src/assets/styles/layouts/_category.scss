@@ -1,0 +1,28 @@
+.containerCategory {
+  width: 100%;
+  background: #000000;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 12px;
+
+  .list {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 30px;
+    li {
+      color: white;
+      font-size: 18px;
+      padding: 10px 15px;
+      background: #555;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+
+      &:hover {
+        background: #777;
+      }
+    }
+  }
+}
