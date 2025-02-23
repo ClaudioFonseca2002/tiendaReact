@@ -1,0 +1,11 @@
+@media (min-width: 992px) and (max-width: 1199px) {
+  .containerLogos {
+    display: flex;
+    gap: 10px; /* Espacio entre imágenes */
+    justify-content: center;
+    background-color: burlywood;
+    img {
+      width: calc(100% / 6 - 10px); /* 6 imágenes por fila */
+    }
+  }
+}

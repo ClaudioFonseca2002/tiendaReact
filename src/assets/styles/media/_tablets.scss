@@ -1,0 +1,14 @@
+@media (min-width: 600px) and (max-width: 992px) {
+  .containerLogos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Espacio entre imágenes */
+    justify-content: center;
+
+    img {
+      width: calc(
+        100% / 6 - 10px
+      ); /* 3 imágenes por fila en pantallas pequeñas */
+    }
+  }
+}
