@@ -3,6 +3,7 @@ import Header from "../../../layouts/Headers";
 import Category from "../../../layouts/Category";
 import Banner from "../../../layouts/Banner";
 import Brands from "../../../layouts/Brands";
+import Offers from "../../../layouts/Offers";
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <Category></Category>
       <Banner></Banner>
       <Brands></Brands>
+      <Offers></Offers>
     </>
   );
 };
