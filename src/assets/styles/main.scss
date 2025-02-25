@@ -1,8 +1,8 @@
 @import "./base/reset.scss";
 @import "./layouts/category";
 @import "./layouts/_banner";
-@import "./media/movile";
+@import "./media/max600px";
 @import "./layouts/brands";
-@import "./media/tablets";
-@import "./media/desktop";
+@import "./media/min600px";
+@import "./media/min992px";
 @import "./layouts/Offers";
