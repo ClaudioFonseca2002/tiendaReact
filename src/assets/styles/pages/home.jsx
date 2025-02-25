@@ -4,6 +4,7 @@ import Category from "../../../layouts/Category";
 import Banner from "../../../layouts/Banner";
 import Brands from "../../../layouts/Brands";
 import Offers from "../../../layouts/Offers";
+import Footer from "../../../layouts/Footer";
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <Banner></Banner>
       <Brands></Brands>
       <Offers></Offers>
+      <Footer></Footer>
     </>
   );
 };
