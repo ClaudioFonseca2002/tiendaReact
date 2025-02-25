@@ -16,8 +16,22 @@
   /*Brands*/
   .containerLogos {
     flex-wrap: wrap;
-    img{
+    img {
       width: calc(100% / 3 - 10px); /* 2 imágenes por fila en móviles*/
     }
+  }
+
+  /*Offers*/
+
+  .containerOffers{
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .containerImg{
+    border: 2px solid black;
+    width: 200px;
   }
 }

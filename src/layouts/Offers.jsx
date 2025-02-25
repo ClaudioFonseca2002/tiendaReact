@@ -1,9 +1,18 @@
 import React, { useRef } from "react";
 import nuevosLanzamientos from "../assets/images/nuevoLanzamientos.png";
 
+const productos = [
+  { id: 1, img: "https://via.placeholder.com/200", nombre: "Producto 1", precio: "$20.00" },
+  { id: 2, img: "https://via.placeholder.com/200", nombre: "Producto 2", precio: "$30.00" },
+  { id: 3, img: "https://via.placeholder.com/200", nombre: "Producto 3", precio: "$40.00" },
+  { id: 4, img: "https://via.placeholder.com/200", nombre: "Producto 4", precio: "$50.00" },
+  { id: 5, img: "https://via.placeholder.com/200", nombre: "Producto 5", precio: "$60.00" },
+  { id: 6, img: "https://via.placeholder.com/200", nombre: "Producto 6", precio: "$70.00" }
+];
+
 const Offers = () => {
   const carruselRef = useRef(null);
-  const scrollAmount = 300; // Ajusta el desplazamiento según el tamaño del producto
+  const scrollAmount = 240;
 
   const scrollLeft = () => {
     if (carruselRef.current) {
@@ -27,36 +36,13 @@ const Offers = () => {
           &#10094;
         </button>
         <div className="carrusel" ref={carruselRef}>
-          <div className="producto">
-            <img src="https://via.placeholder.com/200" alt="Producto 1" />
-            <h3>Producto 1</h3>
-            <p>$20.00</p>
-          </div>
-          <div className="producto">
-            <img src="https://via.placeholder.com/200" alt="Producto 2" />
-            <h3>Producto 2</h3>
-            <p>$30.00</p>
-          </div>
-          <div className="producto">
-            <img src="https://via.placeholder.com/200" alt="Producto 3" />
-            <h3>Producto 3</h3>
-            <p>$40.00</p>
-          </div>
-          <div className="producto">
-            <img src="https://via.placeholder.com/200" alt="Producto 4" />
-            <h3>Producto 4</h3>
-            <p>$50.00</p>
-          </div>
-          <div className="producto">
-            <img src="https://via.placeholder.com/200" alt="Producto 5" />
-            <h3>Producto 5</h3>
-            <p>$60.00</p>
-          </div>
-          <div className="producto">
-            <img src="https://via.placeholder.com/200" alt="Producto 6" />
-            <h3>Producto 6</h3>
-            <p>$70.00</p>
-          </div>
+          {productos.map((producto) => (
+            <div className="producto" key={producto.id}>
+              <img src={producto.img} alt={producto.nombre} />
+              <h3>{producto.nombre}</h3>
+              <p>{producto.precio}</p>
+            </div>
+          ))}
         </div>
         <button className="btn-nav btn-next" onClick={scrollRight}>
           &#10095;
