@@ -1,13 +1,15 @@
 import React, { useRef } from "react";
 import nuevosLanzamientos from "../assets/images/nuevoLanzamientos.png";
+import adidasTop from "../assets/images/shoes/adidasTop.png";
+import adidasRoja from "../assets/images/shoes/adidasRoja.jpg";
+import adidasAzul from "../assets/images/shoes/zapatillaAdidasAzul.png";
+import adidasZamba from "../assets/images/shoes/adidasZamba.png";
 
 const productos = [
-  { id: 1, img: "https://via.placeholder.com/200", nombre: "Producto 1", precio: "$20.00" },
-  { id: 2, img: "https://via.placeholder.com/200", nombre: "Producto 2", precio: "$30.00" },
-  { id: 3, img: "https://via.placeholder.com/200", nombre: "Producto 3", precio: "$40.00" },
-  { id: 4, img: "https://via.placeholder.com/200", nombre: "Producto 4", precio: "$50.00" },
-  { id: 5, img: "https://via.placeholder.com/200", nombre: "Producto 5", precio: "$60.00" },
-  { id: 6, img: "https://via.placeholder.com/200", nombre: "Producto 6", precio: "$70.00" }
+  { id: 1, img: adidasTop , nombre: "Producto 4", precio: "$50.00" },
+  { id: 2, img: adidasRoja , nombre: "Producto 2", precio: "$30.00" },
+  { id: 3, img: adidasAzul , nombre: "Producto 3", precio: "$40.00" },
+  { id: 4, img: adidasZamba , nombre: "Producto 4", precio: "$50.00" },
 ];
 
 const Offers = () => {
