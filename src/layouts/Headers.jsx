@@ -1,12 +1,12 @@
 import React from "react";
 import logo from "../assets/images/nuevoLogo.png";
-import corazon from "../assets/images/corazon.png";
-import perfil from "../assets/images/perfil.png";
+import corazon from "../assets/images/heart.png";
+import perfil from "../assets/images/userProfile.png";
 
 const Header = () => {
   return (
     <>
-      <nav className="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+      <nav className="navbar navbar-expand-lg bg-primary custom-bg" data-bs-theme="dark">
         <div className="container-fluid">
           <a className="navbar-brand" href="#">
             <img src={logo} alt="Bootstrap" width="80" height="60" />
