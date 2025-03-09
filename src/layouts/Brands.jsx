@@ -34,7 +34,7 @@ const Brands = () => {
         pagination={{ clickable: true }}
         modules={[FreeMode, Pagination]}
         breakpoints={{
-          320: { slidesPerView: 3 }, // Para móviles
+          320: { slidesPerView: 2 }, // Para móviles
           768: { slidesPerView: 4 }, // Tablets
           1024: { slidesPerView: 4 }, // Desktop
         }}
