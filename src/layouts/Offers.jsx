@@ -6,10 +6,62 @@ import adidasAzul from "../assets/images/shoes/zapatillaAdidasAzul.png";
 import adidasZamba from "../assets/images/shoes/adidasZamba.png";
 
 const productos = [
-  { id: 1, img: adidasTop , nombre: "Producto 4", precio: "$50.00" },
-  { id: 2, img: adidasRoja , nombre: "Producto 2", precio: "$30.00" },
-  { id: 3, img: adidasAzul , nombre: "Producto 3", precio: "$40.00" },
-  { id: 4, img: adidasZamba , nombre: "Producto 4", precio: "$50.00" },
+  {
+    id: 1,
+    img: adidasTop,
+    nombre: "Adidas Revolucionary",
+    precio: "$120.000",
+    cuotas: "12.000",
+  },
+  {
+    id: 2,
+    img: adidasRoja,
+    nombre: "Adidas Fury",
+    precio: "$100.000",
+    cuotas: "10.000",
+  },
+  {
+    id: 3,
+    img: adidasAzul,
+    nombre: "Adidas Ocean",
+    precio: "$110.000",
+    cuotas: "10.000",
+  },
+  {
+    id: 4,
+    img: adidasZamba,
+    nombre: "Adidas Samba",
+    precio: "$90.000",
+    cuotas: "9.000",
+  },
+  {
+    id: 1,
+    img: adidasTop,
+    nombre: "Adidas Revolucionary",
+    precio: "$120.000",
+    cuotas: "12.000",
+  },
+  {
+    id: 2,
+    img: adidasRoja,
+    nombre: "Adidas Fury",
+    precio: "$100.000",
+    cuotas: "10.000",
+  },
+  {
+    id: 3,
+    img: adidasAzul,
+    nombre: "Adidas Ocean",
+    precio: "$110.000",
+    cuotas: "10.000",
+  },
+  {
+    id: 4,
+    img: adidasZamba,
+    nombre: "Adidas Samba",
+    precio: "$90.000",
+    cuotas: "9.000",
+  },
 ];
 
 const Offers = () => {
@@ -42,7 +94,8 @@ const Offers = () => {
             <div className="producto" key={producto.id}>
               <img src={producto.img} alt={producto.nombre} />
               <h3>{producto.nombre}</h3>
-              <p>{producto.precio}</p>
+              <p>10 cuotas de: ${producto.cuotas}</p>
+              <p className="finalPrice">{producto.precio}</p>
             </div>
           ))}
         </div>
