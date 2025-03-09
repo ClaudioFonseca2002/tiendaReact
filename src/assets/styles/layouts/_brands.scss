@@ -16,11 +16,19 @@
     border-radius: 5px;
   }
 
-  .containerLogos{
+  .containerLogos {
     display: flex;
     background-color: rgb(255, 255, 255);
     width: 90%;
-    align-items:center;
+    align-items: center;
     justify-content: space-between;
+  }
+
+  .brandLogo {
+    max-width: 150px; // Ajusta según el diseño
+    max-height: 100px; // Ajusta según el diseño
+    width: auto;
+    height: auto;
+    object-fit: contain;
   }
 }
