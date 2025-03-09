@@ -1,6 +1,5 @@
-import { useState } from "react";
 import "./assets/styles/main.scss";
-import Home from "./assets/styles/pages/Home";
+import Home from "./assets/styles/pages/home";
 
 const App = () => {
   return (
